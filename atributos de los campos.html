@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de formularios</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, web">
+    <meta name="description" content="Creacion Pagina">
+    <meta name="author" content="Erick Bello">
+    <meta name="viewpoint" content="width= device-width, initial-scale" >
+    <style>
+        body {
+            background-image: url(img/tokio.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--<form action="envio.php target="_blank-->
+<form method="post" autocomplete="on">
+    <fieldset>
+        <label for="nombre">nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="introduce tu nombre" autofocus required><br>
+        <label for="apellido">apellido</label><br>
+        <input type="text" name="apellido" id="apellido" placeholder="introduce tus apellidos" required><br>
+        <!--contraseña-->
+        <label for="contraseña">contraseña:</label><br>
+        <input type="password" id="contraseña" name="contraseña" placeholder="digita tu contraseña" required><br>
+        <!--E-mail-->
+        <label for="correo">email:</label><br>
+        <input type="email" id="contraseña" name="contraseña" placeholder="digita un correo electronico" required><br>
+        <!--ROL-->
+        <label for="rol">Rol:</label><br>
+        <input type="text" id="rol" name="rol" value="estudiante" readonly><!--lo que hace es ponerlo automaticamente-->
+    </fieldset>
+    <br>
+    <fieldset>
+    <!--hidden o oculto-->
+    <input type="hidden" id="estudiante" name="estudiante" value="1"><br>
+    <!--Boton en radio-->
+    <label> Lenguaje de programacion favorito</label><br><br>
+    <input type="radio" name="favorito" id="java">
+    <label for="java">java</label><br>
+    <input type="radio" name="favorito" id="javascript">
+    <label for="javascript">javascript</label><br>
+    <input type="radio" name="favorito" id="python">
+    <label for="python">python</label><br>
+    <!--checkbox-->
+    <br>
+    <label> Lenguaje de programacion que conozca</label><br><br>
+    <input type="checkbox" name="Lenguaje" id="java">
+    <label for="java">java</label><br>
+    <input type="checkbox" name="Lenguaje" id="javascript">
+    <label for="javascript">javascript</label><br>
+    <input type="checkbox" name="Lenguaje" id="python">
+    <label for="python">python</label><br>    
+    </fieldset> 
+    
+    <!--COLOR-->
+    <br>
+    <label for="color">Selecciona un color</label><br>
+    <input type="color" name="color" id="color"><br>
+   
+   <!--Date-->
+    <br>
+    <label for="nacimiento">Ingresa tu fecha de nacimiento</label><br><br>
+    <input type="date" name="nacimiento" id="nacimiento"><br>
+
+   <!--Date-time-->
+    <br>
+    <label for="nacimeito2">Ingresa tu fecha de nacimiento y hora de nacimiento</label><br><br>
+    <input type="datetime-local" name="nacimeito2" id="nacimeito2"><br>
+   
+   <!--time-->
+   <br>
+   <label for="nacimiento">Ingresa una hora:</label><br><br>
+   <input type="time" name="hora" id="hora"><br>
+
+   <!--Number-->
+   <label for="numero">Introduce tu edad:</label><br><br>
+   <!--<input type="number" name="numero" id="numero"><-->
+   <!--<input type="number" name="edad" id="edad" min="0" max="199" step="any">-->
+   <input type="number" name="numero" id="numero"><br>
+
+   <!--Range-->
+   <br>
+   <label for="rango">en que nivel de hypertexto te encuentras</label><br><br>
+   <input type="range" name="rango" id="rango"><br>
+   <!--file-->
+   <br>
+   <label for="archivo">puedes subir un archivo aqui:<br><br>
+   <input type="file" name="archivo" id="archivo"><br>
+
+<!--botones-->
+    <br>
+    <input type="button" onclick="alert('mensaje de alerta')" value="alerta">
+    <input type="submit" value="enviar">
+    <input type="reset" value="reiniciar">
+    <br>    
+<!--elementos de funcionarios tipo seleccion-->
+   <br> <label>Lenguajes de programacion en seleccion</label><br>
+    <select id="Lenguajes2" id="Lenguajes2"><br><br>    
+        <option value="java">java</option><br>
+        <option value="javascript">javascript</option>
+        <option value="python">python</option>
+        <option value="c++">c++</option><br>
+    </select>
+<!--elementos de funcionarios tipo lista de datos-->    <br><br>
+    <label>Lenguajes de programacion en lista de datos</label><br>
+    <br>
+    <input list="Lenguajes3" name="Lenguajes3">
+    <datalist id="Lenguajes3"><br>
+    <option value="java">java</option>
+    <option value="javascript">javascript</option>
+    <option value="python">python</option>
+    <option value="c++">c++</option>
+    </datalist><br>
+
+    
+
+
+</form>
+<br>
+    <button><a href="index.html">Ir a inicio</a></button>
+</body>
+</html>
